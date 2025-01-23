@@ -13,41 +13,50 @@
             margin-right: 0px;
         }
         #one form{
-            padding: 20px;
+            padding: 10px;
             padding-top: 70px;
             color: white;
-
-        }
-
-        #one h1 {
-            text-align: center;
-            font-weight: bolder;
-            color: black;
         }
         div{
             display: flex;
+            margin: 90px;
         }
         #two{
             background-color: white;
             margin: 10px;
             margin-left: 0px;
+            width: 350px;
         }
         #two form{
-            padding: 20px;
+            padding:40px;
+            width: 200px;
         }
         input[type=text],[type=email],[type=tel]{
-         width: 50px;
-    height:10px;
-    margin-top: 20px;
-    padding-left: 10px}
-
+            margin-top: 20px;
+            padding-left: 10px;
+            border-radius:0px;
+            width: 250px;
+            height: 30px;
+            background-color: lightgray;}
         button{
-    background-color: blue;
+    background-color: deepskyblue;
     width: 50%;
     height: 40px;
     border-radius: 10px;
     margin: 0 auto;
-    display: block;}
+    display: block;
+        }
+
+        textarea{
+            height:50px;
+            background-color: lightgray;
+        color: dimgrey}
+
+        #nambari{
+            text-align: center;
+            font-size: 35px;
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>
@@ -55,31 +64,29 @@
     <div id="one">
         <form action="">
             <h1 style="color: white;text-align: center;font-weight: bolder">Let's Chat</h1>
-            <p>Whether you have a question,want to <br> start a project or simply want to  connect.</p>
+            <p style="text-align: center">Whether you have a question,want to <br> start a project or simply want to  connect.</p>
             <br>
-            <p>Feel free to send me a message in the <br> contact form</p>
+            <p style="text-align:center">Feel free to send me a message in the <br> contact form</p>
         </form>
     </div>
     <div id="two">
         <form action="">
-            <h1>Contact</h1>
+            <legend id="nambari">Contact</legend>
             <br>
-            <label for="jina">Name</label>
-            <input type="text" required="required"id="jina">
+            <legend>*Required</legend>
+            <br>
+            <input type="text" placeholder="Name" required="required" id="jina" />
+            <br>
+            <input type="email" placeholder="Email" required="required" id="sajili">
+            <br>
+            <input type="text" placeholder=Company required="required" id="kazi">
+            <br>
+            <input type="tel" Placeholder="Phone" required="required" id="no."/>
             <br><br>
-            <label for="sajili">Email</label>
-            <input type="email" required="required" id="sajili">
-            <br><br>
-            <label for="kazi">Company</label>
-            <input type="text" required="required" id="kazi">
-            <br><br>
-            <label for="no.">Phone</label>
-            <input type="tel" required="required"id="no.">
-            <br><br>
-            <label for="jina">Message</label>
-            <input type="text" required="required"id="jina">
-            <br><br>
+            <textarea name="" id="Message" cols="40" rows="5" placeholder="Message">Message</textarea>
             <button>SUBMIT</button>
+
+
 
 
         </form>
